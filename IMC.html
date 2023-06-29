@@ -1,0 +1,81 @@
+<meta charset="UTF-8">
+
+<h1> CALCULADORA IMC </h1> 
+<br>
+<script> 
+
+	function saltarlinea()  {
+
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+		
+
+		}
+
+function print(frase)  {
+
+		document.write(frase);
+		saltarlinea();
+
+		}
+function calcularIMC(peso,altura) {
+
+
+	
+	return (peso / (altura * altura));
+	
+} 
+nombre = prompt("ingresa su nombre")
+peso_informado = prompt(nombre + ", ingrese su peso")
+altura_informada = prompt(nombre + ", ingrese su altura")
+imc_calculado = calcularIMC(peso_informado, altura_informada)
+
+
+    print(nombre + ", Su IMC es: <br> " + imc_calculado);
+
+
+
+
+	if(imc_calculado < 18.5) {
+
+print("Estas por debajo de tu peso ideal");
+
+}
+
+if(imc_calculado >= 18.25) {
+if(imc_calculado < 25) {
+
+print("Estas en tu peso ideal");
+
+}
+}
+
+
+if(imc_calculado >= 25) {
+if(imc_calculado  < 30) {
+
+print("Cuidate un poco más, tienes sobrepeso");
+
+}
+}
+
+
+if(imc_calculado >= 30) {
+
+print("Preocupate tienes obesidad, come sano y haz ejercicio");
+
+}
+
+//puedes crear tus propias funciones. Para hacerlo, se debe usar la keyword function seguida de otra keyword que va a definir el nombre de tu funcion, posteriormente, se deben usar parentesis y dentro de estas se deben poner los parametros de tu funcion. Segudio de esto, se debe abrir un bloque con una llave y es importante que se cierre con otra, dentro de estas llaves, se debe colocar la keyword document.write segudi de parentesis () y dentro de ellos el nombre que le pusiste a tu funcion.
+
+</script>
+
+ 
+
+
+
+
+
+
+

@@ -1,0 +1,73 @@
+<meta charset="UTF-8">
+
+<h1> LOG IN </h1> 
+<br>
+<script> 
+
+	function saltarlinea()  {
+
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+		
+
+		}
+
+function print(frase)  {
+
+		document.write(frase);
+		saltarlinea();
+
+		}
+
+var usuario = "CryptoChaaos"
+var password = "CryptoChaaos19"
+
+
+var intentosMaximos = 3;
+var IntentoActual = 1;
+
+
+while(IntentoActual <= intentosMaximos) {
+
+var ingresatTuUsuario = prompt("Ingresa tu usuario")
+var ingresTuContraseña = prompt("Ingresa tu contraseña")
+
+if(usuario == ingresatTuUsuario) {
+
+	alert("acceso autorizado. BIENBENIDO " + usuario);
+
+	IntentoActual = intentosMaximos;
+	
+}
+
+else {
+if(IntentoActual == 3) {
+
+	alert("agotaste el número de intentos");
+
+	}
+
+else {
+
+	alert("Tu cuenta ha será bloqueada. Intente más tarde");
+
+	}
+}
+	IntentoActual = intentosMaximos + 1
+}
+
+
+
+//puedes crear tus propias funciones. Para hacerlo, se debe usar la keyword function seguida de otra keyword que va a definir el nombre de tu funcion, posteriormente, se deben usar parentesis y dentro de estas se deben poner los parametros de tu funcion. Segudio de esto, se debe abrir un bloque con una llave y es importante que se cierre con otra, dentro de estas llaves, se debe colocar la keyword document.write segudi de parentesis () y dentro de ellos el nombre que le pusiste a tu funcion.
+
+</script>
+
+ 
+
+
+
+
+
+
+

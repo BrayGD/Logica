@@ -1,0 +1,51 @@
+<meta charset="UTF-8">
+
+<h1> TABLA DE PUNTUACIÓN </h1> 
+<br>
+<script> 
+
+	function saltarlinea()  {
+
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+		
+
+		}
+
+	function print(frase) {
+	
+	document.write(frase); 
+	saltarlinea();
+
+}
+
+var victoria = parseInt(prompt("¿Cuántas victorias tuvo tu eqipo?"));
+var empates = parseInt(prompt("¿Cuántos partidos empato tu equipo?"));
+
+var puntosTotales = victoria * 3 + empates;
+
+print("El total de puntos de tu equipo es de : " + puntosTotales);
+
+if (puntosTotales > 10) {
+
+print("El equipo esta mejor que el año pasado");
+
+}
+
+if (puntosTotales < 10) {
+
+print("El equipo necesita un cambio");
+
+}
+
+if (puntosTotales == 10) {
+
+print("El equipo sigue igual y no hay progreso");
+
+}
+
+
+
+
+</script>

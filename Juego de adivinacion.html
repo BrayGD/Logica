@@ -1,0 +1,77 @@
+<meta charset="UTF-8">
+
+<h1> ¡ADIVINA MI NÚMERO Y GANA UN PREMIO! </h1> 
+<br>
+<script> 
+
+	function saltarlinea()  {
+
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+		
+
+		}
+
+function print(frase)  {
+
+		document.write(frase);
+		saltarlinea();
+
+		}
+
+
+
+
+var numeroSistema = Math.round(Math.random()*10);
+var intentos = 3;
+var contador = 1;
+
+
+while(contador <= intentos) {
+
+var numeroLanzado = parseInt(prompt("Ingrese un número entre 1-10"));
+
+
+
+if(numeroSistema == numeroLanzado) {
+
+	alert("Acertaste, en el intento: " + contador + " te ganaste una paleta " + " el numero pensado era: " + numeroSistema);
+	break;
+}
+
+else {
+
+alert ("Usted erró");
+
+	}
+	contador++;
+}
+
+if(numeroSistema == numeroLanzado) {
+
+	print("Acertaste, en el intento: " + contador + " te ganaste una paleta " + " el numero pensado era: " + numeroSistema);
+	
+}
+
+else {
+
+print ("te equiovocaste, el numero pensado era: " + numeroSistema + " .ACEPTA EL RETO ");
+
+	}
+	
+
+
+
+//puedes crear tus propias funciones. Para hacerlo, se debe usar la keyword function seguida de otra keyword que va a definir el nombre de tu funcion, posteriormente, se deben usar parentesis y dentro de estas se deben poner los parametros de tu funcion. Segudio de esto, se debe abrir un bloque con una llave y es importante que se cierre con otra, dentro de estas llaves, se debe colocar la keyword document.write segudi de parentesis () y dentro de ellos el nombre que le pusiste a tu funcion.
+
+</script>
+
+ 
+
+
+
+
+
+
+

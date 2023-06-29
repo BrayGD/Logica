@@ -1,0 +1,30 @@
+<meta charset="UTF-8">
+
+<h1>¿Alcohol o gasolina?</h1>
+<br>
+<script> 
+
+function saltarlinea()  {
+
+		document.write("<br>");
+
+
+		}
+
+function print(frase)  {
+
+		document.write(frase);
+
+		}
+
+var combustible= 40;
+var distancia= 480;
+var distancia_recorrida_X_litro= distancia / combustible + " (km/l)";
+print("La eficiencia del coche por cada litro consumido de gasolina es de...  "  + distancia_recorrida_X_litro);
+saltarlinea() 
+var combustible= 40;
+var distancia= 300;
+var distancia_recorrida_X_litro= distancia / combustible + " (km/l)";
+print("Si el coche usara alcohol en lugar de gasolina, el coche recorrerìa...  "  + distancia_recorrida_X_litro + "  por cada litro de alcohol consumido");
+
+</script>
